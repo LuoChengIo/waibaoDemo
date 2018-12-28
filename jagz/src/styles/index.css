@@ -1,0 +1,13 @@
+
+@import './lib/variables.css';
+.test {
+  width: 750px;
+  color: $warning;
+  height: 64px;
+  transform: translateX(-12PX);
+  line-height: 40px;
+  border: 1px solid #ddd;
+  .ts{
+    color: gray;
+  }
+}
