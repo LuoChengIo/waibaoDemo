@@ -75,6 +75,12 @@
   .tsd{
     padding-top: 30px;
     padding-bottom: 30px;
+    .ts{
+      text-align: left;
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
     .dqs{
       display: inline-block;
       height: 50px;

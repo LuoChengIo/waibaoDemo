@@ -152,7 +152,7 @@ gulp.task('watch', function () {
   gulp.watch([srcPath.script + '/*.js', '!' + srcPath.script + '/*.min.js'], ['script']);
 });
 // 默认任务
-gulp.task('default', ['copy','webserver', 'watch']);
+gulp.task('default', ['copy','watch']);
 
 /* = 发布环境( Release Task )
 -------------------------------------------------------------- */
