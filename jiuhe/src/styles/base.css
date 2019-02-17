@@ -42,6 +42,35 @@
   transition: all .3s;
   color:  $secondary;
 }
+.Light{
+  &.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-nav>li>a{
+      color: $white;
+      &:focus{
+        color:  $secondary;
+      }
+      &:hover{
+        color:  $secondary;
+      }
+    }
+  }
+}
+.Dark{
+  &.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+    .navbar-nav>li>a{
+      &:focus{
+        color:  $secondary;
+      }
+      &:hover{
+        color:  $secondary;
+      }
+    }
+  }
+}
 @media (min-width: 768px){
   .navbar-nav>li>a {
     padding: 8px 15px;
