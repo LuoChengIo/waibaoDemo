@@ -1,0 +1,99 @@
+@import './lib/base.css';
+
+/*=============================================
+=            覆盖bootstraps样式            =
+=============================================*/
+@media (min-width: 1900px){
+  .container {
+      width: 1580px;
+  }
+}
+
+.navbar-inverse{
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 1px 3px rgba(34,25,25,0.1)
+}
+.navbar-brand{
+  height: auto;
+  padding: 10px;
+  img{
+    height: 35px;
+  }
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: $primary;
+  font-size: 16px;
+}
+.navbar-right {
+  margin-top: 10px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border-color: #ddd;
+}
+.navbar-inverse .navbar-toggle{
+  border-color: #ddd;
+  background-color: $primary;
+  margin-top: 10px;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+  transition: all .3s;
+  color:  $secondary;
+}
+@media (min-width: 768px){
+  .navbar-nav>li>a {
+    padding: 8px 15px;
+  }
+}
+/*=====  End of 覆盖bootstraps样式 ======*/
+
+/*=============================================
+=            自定义公共部分            =
+=============================================*/
+.nav-foot{
+  .foot-bg{
+    background-color: $secondary;
+    min-height: 45px;
+    padding: 10px;
+    .foot-lian{
+      li{
+        font-size: 12px;
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 1;
+        & + li{
+          border-left:1px solid #FBEFBD;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          color: #FBEFBD;
+        }
+      }  
+    }
+  }
+  .tsd{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .ts{
+      text-align: left;
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
+    .dqs{
+      display: inline-block;
+      height: 50px;
+      width: auto;
+      max-width: 100%;
+      margin: 15px 0 ;
+    }
+  }
+}
+
+
+/*=====  End of 自定义公共部分  ======*/
+
