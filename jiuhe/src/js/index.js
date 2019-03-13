@@ -47,4 +47,5 @@ $(function(){
   // }else{
   //   $(".txtMarquee-left").slide({mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:1});
   // }
+
 })

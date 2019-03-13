@@ -1,89 +1,65 @@
 
 @import './lib/variables.css';
-.in-video{
-  
-}
-#player-Abbreviated,#player-Abbreviated video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-#myModal-Abbreviated{
-  position: absolute;
-  top: 0;
+.mobile-head{
+  position: fixed;
+  top:0;
   left: 0;
-  height: 100%;
-  width: 100%;
-}
-.modal-dialog{
-  max-width: 90%;
-  .modal-body{
-    padding: 0;
-  }
-}
-.video-mask{
-  position: absolute;
-  top: 0;
   right: 0;
-  left: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.3);
-  .palybut{
-    position: absolute;
-    top:50%;
-    left:50%;
-    width:80px;
-    height:80px;
-    border-radius: 100%;
-    transform: translate(-50%, -50%);
-    background: url('../images/play.png') no-repeat center;
+  z-index: 10000;
+  background-color: #fff;
+  animation-duration: .35s !important;
+  .m-title{
+    padding: 9px 15px;
+    line-height: 40px;
   }
-}
-#video_cover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url('../images/video_cover.jpeg') no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.txtMarquee-left{
-	/* width:1060px;*/
-	position:relative;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #E8E9EB;
-	background-image: url('../images/gg-ioc.gif');
-	background-repeat: no-repeat;
-	background-position: left;
-	line-height: 59px;
-	padding-left: 135px;
-	margin-bottom: 25px;-moz-box-shadow: 0px 1px 3px #e6e6e6;
-    -webkit-box-shadow: 0px 1px 3px #e6e6e6;
-	box-shadow: 0px 1px 3px #e6e6e6;
--moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-	border-radius: 5px;
-  border: 1px solid #D5D5D5;
-  @media (max-width: 768px){
-    &{
-      margin-right: 10px;
-      margin-left: 10px;
-      background-image: none;
-      padding-left:10px;
-      padding-right: 10px; 
+  .m-logo{
+    max-height: 40px;
+    width: 50%;
+    max-width: 344px;
+  }
+  .m-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 15px;
+  }
+  .m-nav{
+    margin: 12px 0;
+    li{
+      padding: 12px 17px;
+      font-size: 15px;
+      a{
+        color: #323232;
+      }
+      &:active{
+        background-color: #f2f2f2
+      }
     }
   }
+  .m-seach{
+    position: relative;
+    margin: 12px 17px;
+    padding: 12px 60px 12px 10px;
+    background-color: #f2f2f2;
+    line-height: 18px;
+  }
+  .m-input{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    color: #929292;
+  }
+  .m-s-btn{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    width: 57px;
+    border-left: 1px solid #929292;
+    text-align: center;
+    line-height: 27px;
+    color: #929292;
+  }
 }
-.txtMarquee-left .bd{ padding:10px;height: 44px; }
-/* .txtMarquee-left .bd .tempWrap{
-    width:1036px!important; 
- }/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
-.txtMarquee-left .bd ul{ overflow:hidden; zoom:1; }
-.txtMarquee-left .bd ul li{ margin-right:20px;  float:left; height:24px; line-height:24px;  text-align:left; _display:inline; width:auto !important;  }/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
-.txtMarquee-left .bd ul li span{ color:#999;  }

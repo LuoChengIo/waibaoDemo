@@ -1,4 +1,5 @@
 @import './lib/base.css';
+@import './lib/animate.css';
 
 /*=============================================
 =            覆盖bootstraps样式            =
@@ -123,6 +124,10 @@
   }
 }
 
-
+.click-active{
+  &:active{
+    background-color: #f2f2f2
+  }
+}
 /*=====  End of 自定义公共部分  ======*/
 
