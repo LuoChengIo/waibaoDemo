@@ -9,117 +9,77 @@
       width: 1580px;
   }
 }
-
-.navbar-inverse{
-  background-color: #fff;
-  border-color: #fff;
-  box-shadow: 0 1px 3px rgba(34,25,25,0.1)
-}
-.navbar-brand{
-  height: auto;
-  padding: 10px;
-  img{
-    height: 35px;
-  }
-}
-.navbar-inverse .navbar-nav>li>a{
-  color: $primary;
-  font-size: 16px;
-}
-.navbar-right {
-  margin-top: 10px;
-}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
-  border-color: #ddd;
-}
-.navbar-inverse .navbar-toggle{
-  border-color: #ddd;
-  background-color: $primary;
-  margin-top: 10px;
-}
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
-}
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
-  transition: all .3s;
-  color:  $secondary;
-}
-.Light{
-  &.navbar-inverse{
-    background-color: transparent;
-    border-color: transparent;
-    .navbar-nav>li>a{
-      color: $white;
-      &:focus{
-        color:  $secondary;
-      }
-      &:hover{
-        color:  $secondary;
-      }
-    }
-  }
-}
-.Dark{
-  &.navbar-inverse{
-    background-color: transparent;
-    border-color: transparent;
-    .navbar-nav>li>a{
-      &:focus{
-        color:  $secondary;
-      }
-      &:hover{
-        color:  $secondary;
-      }
-    }
-  }
-}
-@media (min-width: 768px){
-  .navbar-nav>li>a {
-    padding: 8px 15px;
-  }
-}
 /*=====  End of 覆盖bootstraps样式 ======*/
 
 /*=============================================
 =            自定义公共部分            =
 =============================================*/
+/*****底部*****/
 .nav-foot{
-  .foot-bg{
-    background-color: $secondary;
-    min-height: 45px;
-    padding: 10px;
-    .foot-lian{
-      li{
-        font-size: 12px;
-        display: inline-block;
-        padding: 0 10px;
-        line-height: 1;
-        & + li{
-          border-left:1px solid #FBEFBD;
-        }
-        &:last-child{
-          padding-right: 0;
-        }
-        a{
-          color: #FBEFBD;
-        }
-      }  
+  background-color: #fff;
+  min-height: 45px;
+  padding: 1px 0;
+  .f-title{
+    margin: 20px 0 15px 0;
+  }
+  .attention-icon{
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+  }
+  .c-link{
+    margin: 20px 0 5px 0;
+  }
+  .c-link-a{
+    font-size: 12px;
+    padding: 0 10px;
+    margin: 5px 0;
+    & + .c-link-a{
+      border-left: 1px solid $info;
+    }
+    &:first-child{
+      padding-left: 0;
     }
   }
-  .tsd{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    .ts{
-      text-align: left;
-      @media (min-width: 768px) {
-        text-align: right;
+  .copyright{
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $dark;
+    margin: 0 -15px;
+    a{
+      color: rgba(255,255,255,.6);
+    }
+  }
+  @media (min-width: 768px){
+    background-color: $dark;
+    padding: 18px 0;
+    .attention{
+      display: inline-block;
+    }
+    .c-l-c{
+      float: right;
+    }
+    .c-link{
+      text-align: right;
+      margin: 0 0 5px 0;
+    }
+    .c-link-a{
+      color: rgba(255,255,255,.6);
+      transition: all .3s;
+      &:hover{
+        color: rgba(255,255,255,.9);
+      }
+      &:last-child{
+        padding-right: 0;
       }
     }
-    .dqs{
-      display: inline-block;
-      height: 50px;
-      width: auto;
-      max-width: 100%;
-      margin: 15px 0 ;
+    .copyright{
+      padding: 0;
+      margin: 0;
     }
   }
 }
@@ -129,19 +89,69 @@
     background-color: #f2f2f2
   }
 }
+@media (min-width: 768px){
+  .auto-foot-ct{
+    .auto-contanter{
+      min-height: 100%;
+      padding-bottom: 80px;
+    }
+    .auto-foot{
+      margin-top: -80px;
+    }
+  }
+}
+  
 /*****头部*****/
 .c-nav{
+  position: relative;
+  width: 100%;
   padding: 8px 0;
   line-height: 40px;
   background-color: #FFF;
   box-shadow: 0 1px 1px rgba(34,25,25,0.1);
+  &.fixed-nav{
+    position: fixed;
+    top:0px;
+    left: 0;
+    z-index: 100;
+  }
+  &.Light{
+    background-color: transparent;
+  }
+  &.Dark{
+    background-color: transparent;
+    .logo{
+      display: none;
+    }
+    .logo1{
+      display: block;
+    }
+    .pc-nav{
+      li{
+        a{
+          color: #FFF;
+        }
+        &:hover{
+          a{
+            color: $secondary;
+          }
+        }
+      }
+    }
+    .c-more,.search-close{
+      color: #fff;
+    }
+  }
   .c-logo{
-    display: none;
+    display: inline-block;
     width: 50%;
     max-width: 344px;
     img{
       max-height: 40px;
     }
+  }
+  .mobile-logo{
+    display: none;
   }
   .c-back{
     position: absolute;
@@ -168,37 +178,62 @@
     padding: 8px 15px;
     display: inline-block;
     line-height: 40px;
-    img{
-      display: inline-block;
-      vertical-align: middle;
-      width: 23px;
-    }
+    color: #222;
   }
   &.index-nav{ /*首页移动的头部*/
     box-shadow:none;
-    .c-logo{
+    .mobile-logo{
       display: inline-block;
     }
     .c-title,.c-back{
       display: none;
     }
   }
+  .pc-nav{
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    li{
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 16px;
+      text-align: center;
+      max-width: 120px;
+      a{
+        color: $primary;
+      }
+      &:hover{
+        a{
+          color: $secondary;
+        }
+      }
+    }
+    .form-control{
+      height: 40px;
+      border: 1px solid #f2f2f2;
+      box-shadow: none;
+      border-radius: 4px 0 0 4px;
+      width: 400px;
+    }
+    .btn-danger{
+      width: 75px;
+      text-align: center;
+      height: 40px;
+      border-radius: 0;
+      font-size: 16px;
+      background-color: #b81c22;
+    }
+  }
+  @media (min-width: 768px){
+    padding: 15px 0;
+    .c-logo{
+      max-width: 300px;
+    }
+  }
+  @media (min-width: 1900px){
+    padding: 20px 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mobile-head{
   position: fixed;
@@ -261,7 +296,21 @@
     text-align: center;
     line-height: 27px;
     color: #929292;
+    .btn{
+      border:none;
+      padding: 0;
+      background-color: transparent;
+    }
   }
 }
+/*******======swiper-=======*/
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  .swiper-pagination-bullet-active{
+    background: $secondary;
+  }
+}
+
 /*=====  End of 自定义公共部分  ======*/
 

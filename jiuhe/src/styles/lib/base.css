@@ -66,6 +66,7 @@ a:focus, a:hover{
 .dn { display: none; }
 /* height */
 .hp100{height: 100%;}
+.min-hp100{min-height: 100%;}
 /* width */
 /* fixed width value */
 .w1 { width: 1px; }
@@ -80,6 +81,7 @@ a:focus, a:hover{
 .pct50 { width: 50%; }
 .pct100 { width: 100%; }
 /* line-height */
+.lhp1{line-height: 1;}
 .lhp15{line-height: 1.5;}
 .lhp2{line-height: 2;}
 /* margin */

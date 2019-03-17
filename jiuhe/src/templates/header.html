@@ -1,47 +1,48 @@
-<!-- Fixed navbar -->
-<!-- <nav class="navbar navbar-inverse navbar-fixed-top Light">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img class="img-responsive" src="./images/logo.png" alt="" srcset="">
-      </a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">关于</a></li>
-        <li><a href="#">案例</a></li>
-        <li><a href="#">资讯</a></li>
-        <li><a href="#">联系</a></li>
-        <li><a href="#">EN</a></li>
-        <li><a href="#">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-<!-- index-nav -->
-<div class="c-nav">
-  <div class="container">
-    <a class="c-logo vm " href="">
-      <img class="dib pct100" src="./images/logo.png" alt="" srcset="">
+<!-- index-nav Dark Light-->
+<div class="c-nav f0 fixed-nav">
+  <!-- 移动头部 -->
+  <div class="container visible-xs-block">
+    <a class="c-logo mobile-logo  vm" href="./index.html">
+      <img class="dib pct100 logo" src="./images/logo.png" alt="" srcset="">
+      <img class="dib pct100 logo1 dn" src="./images/logo1.png" alt="" srcset="">
     </a>
     <div class="c-back">
       <img src="./images/back.png" alt="" srcset="">
     </div>
     <h1 class="c-title f18 tc text-dark ell"></h1>
-    <div class="c-more">
-      <img src="./images/more.png" alt="" srcset="">
+    <div  class="c-more">
+      <span class="glyphicon glyphicon-menu-hamburger vm f18" aria-hidden="true"></span>
     </div>
   </div>
+  <!-- pc头部 -->
+  <div class="container hidden-xs">
+      <a class="c-logo vm" href="./index.html">
+        <img class="dib pct100 logo" src="./images/logo.png" alt="" srcset="">
+        <img class="dib pct100 logo1 dn" src="./images/logo1.png" alt="" srcset="">
+      </a>
+      <ul class="pc-nav st">
+        <li><a class="db ell" title="" href="javascript:">首页</a></li>
+        <li><a class="db ell" title="" href="javascript:">关于</a></li>
+        <li><a class="db ell" title="" href="javascript:">案例</a></li>
+        <li><a class="db ell" title="" href="javascript:">资讯</a></li>
+        <li><a class="db ell" title="" href="javascript:">联系</a></li>
+        <li><a class="db ell" title="" href="javascript:">EN</a></li>
+        <li><a data-search="nav" class="db ell" href="javascript:"><span class="glyphicon glyphicon-search vm" aria-hidden="true"></span></a></li>
+      </ul>
+      <div class="pc-nav search dn">
+        <form class="form-inline" method="GET" action="/sdasd">
+          <div class="form-group">
+            <input type="text" class="form-control" name="search" placeholder="请输入搜索的内容">
+          </div>
+          <button type="submit" class="btn btn-danger">搜索</button>
+          <div data-search="close" class="search-close dib pl20 poi">
+            <span class="glyphicon glyphicon-remove f18 vm" aria-hidden="true"></span>
+          </div>
+        </form>
+      </div>
+  </div>
 </div>
-<div class="mobile-head dn ">
+<div class="mobile-head dn f0 ">
   <div class="m-title">
     <a class="dib m-logo vm " href="">
       <img class="db pct100" src="./images/logo.png" alt="" srcset="">
@@ -51,17 +52,19 @@
     </div>
   </div>
   <ul class="m-nav">
-    <li><a class="db ell" href="javascript:">首页</a></li>
-    <li><a class="db ell" href="javascript:">关于</a></li>
-    <li><a class="db ell" href="javascript:">案例</a></li>
-    <li><a class="db ell" href="javascript:">资讯</a></li>
-    <li><a class="db ell" href="javascript:">联系</a></li>
-    <li><a class="db ell" href="javascript:">EN</a></li>
+    <li><a class="db ell" title="" href="javascript:">首页</a></li>
+    <li><a class="db ell" title="" href="javascript:">关于</a></li>
+    <li><a class="db ell" title="" href="javascript:">案例</a></li>
+    <li><a class="db ell" title="" href="javascript:">资讯</a></li>
+    <li><a class="db ell" title="" href="javascript:">联系</a></li>
+    <li><a class="db ell" title="" href="javascript:">EN</a></li>
   </ul>
-  <div class="m-seach">
-    <input class="m-input" type="text" placeholder="请输入搜索内容">
-    <div class="m-s-btn">
-      <span class="glyphicon glyphicon-search f18 vm" aria-hidden="true"></span>
-    </div>
+  <div class="m-seach f14">
+    <form method="GET" action="/sdasd">
+      <input type="text" class="m-input" name="search" placeholder="请输入搜索的内容">
+      <div class="m-s-btn">
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search f18 vm" aria-hidden="true"></span></button>
+      </div>
+    </form>
   </div>
 </div>

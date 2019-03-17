@@ -20,20 +20,51 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./js/plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="hp100 ovh">
+<body class="hp100">
   <!-- 头部 -->
   <include src="templates/header.html"></include>
-  <div id="mobileNav" style="height:300px;"></div>
+  <!-- 纵向轮播 -->
+  <div class="swiper-container swiper-container-v" data-head="Light">
+    <div class="swiper-wrapper">
+      <!-- 首屏轮播 -->
+      <div class="swiper-slide section">
+        <div class="swiper-container index-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-head="Light">
+              <a class="index-baner-slide" style="background-image: url('./images/ad-banner1.jpg')" href="javascript:"></a>
+            </div>
+            <div class="swiper-slide" data-head="Dark">
+              <a class="index-baner-slide" style="background-image: url('./images/ad-banner2.jpg')" href="javascript:"></a>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination index-swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- 后续展示图 -->
+      <div class="swiper-slide section" data-head="Dark">
+        <div class="index-baner-slide swiper-lazy" data-background="./images/ad-banner3.jpg"></div>
+      </div>
+      <div class="swiper-slide section" data-head="Dark">
+        <div class="index-baner-slide swiper-lazy" data-background="./images/ad-banner4.jpg"></div>
+      </div>
+      <div class="swiper-slide section" data-head="Dark">
+        <div class="index-baner-slide swiper-lazy" data-background="./images/ad-banner5.jpg"></div>
+        <div class="index-footer">
+          <include src="templates/footer.html"></include>
+        </div>
+      </div>
+      <!-- 后续展示图end -->
+    </div>
+  </div>
   <!-- 底部 -->
-  <include src="templates/footer.html"></include>
+  
   <script src="./js/lib/include.js"></script>
   <script src="./js/lib/jquery-3.3.1.min.js"></script>
-  <script src="./js/plugins/bootstrap/bootstrap.js"></script>
-  <script src="./js/plugins/swiper/swiper.min.js"></script>
-  <script src="./js/common.min.js"></script>
+  <script src="./js/libs.min.js"></script>
   <script src="./js/index.min.js"></script>
 </body>
 </html>
