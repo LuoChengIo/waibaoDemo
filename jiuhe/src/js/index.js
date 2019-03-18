@@ -26,6 +26,10 @@ $(function(){
     pagination: {
       el: '.index-swiper-pagination',
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     on:{
       slideChange: function(){
         if(indexBanner){

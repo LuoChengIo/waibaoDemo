@@ -26,3 +26,30 @@
     width: 100%;
     z-index: 10;
 }
+.swiper-container-v{
+
+    .swiper-button-prev,.swiper-button-next{
+        width: 47px;
+        height: 93px;
+        margin-top: -46.5px;
+        background-size:contain;
+        transition: all .3s;
+        opacity: 0;
+        &:hover{
+            opacity: 1 !important;
+        }
+    }
+    .swiper-button-prev{
+        left: 150px;
+        background-image: url('../images/swiper-prev.png');
+    }
+    .swiper-button-next{
+        right: 150px;
+        background-image: url('../images/swiper-next.png');
+    }
+    &:hover{
+        .swiper-button-prev,.swiper-button-next{
+            opacity: .6;
+        }
+    }
+}
