@@ -33,7 +33,6 @@ $(function(){
     on:{
       slideChange: function(){
         if(indexBanner){
-          console.log(swiperV.activeIndex)
           if(swiperV.activeIndex){
             return
           }

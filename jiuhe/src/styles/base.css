@@ -1,6 +1,6 @@
 @import './lib/base.css';
 @import './lib/animate.css';
-
+@import '../fonts/iconfont.css';
 /*=============================================
 =            覆盖bootstraps样式            =
 =============================================*/
@@ -311,6 +311,109 @@
     background: $secondary;
   }
 }
+/****浮动联系客服*****/
+.float-nav{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 44px;
+  height: 148px;
+  z-index: 99;
+  .f-kefu-c{
+    width: 100%;
+    padding: 10px 9px;
+    font-size: 12px;
+    background-color: #d6000f;
+    .icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+    .f-k-detail{
+      position: absolute;
+      z-index: 200;
+      width: 200px;
+      border-radius: 6px;
+      right: 0;
+      bottom: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      background-color: #fff;
+      .f-title{
+        padding: 10px 15px;
+        background-color: #d6000f;
+        line-height: 24px;
+      }
+      .f1{
+        font-size: 24px;
+      }
+      .f3{
+        font-size: 16px;
+        margin-top: 6px;
+      }
+    }
+    .f-qq{
+      padding:5px 15px;
+      background-color: #f2f2f2;
+      a{
+        line-height: 36px;
+        color: #222;
+        font-size: 14px;
+        .icon{
+          font-size: 16px;
+        }
+        &:hover{
+          color: #d6000f;
+        }
+      }
+    }
+    .f-lianxi{
+      padding: 5px 15px;
+      color: #222;
+      .f-l-title{
+        font-size: 14px;
+        line-height: 30px;
+        .icon{
+          font-size: 18px;
+        }
+       
+      }
+      a{
+        line-height: 30px;
+        color: #222;
+        &:last-child{
+          border-bottom: 1px solid #f9f9f9;
+        }
+      }
+    }
+  }
 
+  .f-top-c{
+    width: 100%;
+    height: 44px;
+    margin-top: 2px;
+    background-color: #888888;
+    line-height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    &:hover{
+      background-color: #d6000f;
+    }
+  }
+  @media (min-width: 768px){
+    bottom: 100px;
+    right: 100px;
+    width: 50px;
+    .f-kefu-c{
+      font-size: 16px;
+      .icon {
+        font-size: 32px;
+      }
+    }
+    .f-top-c{
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
 /*=====  End of 自定义公共部分  ======*/
 

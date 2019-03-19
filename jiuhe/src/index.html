@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./js/plugins/swiper/swiper.min.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="hp100">
+<body class="hp100" data-head-class="fixed-nav index-nav">
   <!-- 头部 -->
   <include src="templates/header.html"></include>
   <!-- 纵向轮播 -->
@@ -56,14 +56,15 @@
       <div class="swiper-slide section" data-head="Dark">
         <div class="index-baner-slide swiper-lazy" data-background="./images/ad-banner5.jpg"></div>
         <div class="index-footer">
+            <!-- 底部 -->
           <include src="templates/footer.html"></include>
         </div>
       </div>
       <!-- 后续展示图end -->
     </div>
   </div>
-  <!-- 底部 -->
-  
+  <!-- 客服 -->
+  <include src="templates/float.html"></include>
   <script src="./js/lib/include.js"></script>
   <script src="./js/lib/jquery-3.3.1.min.js"></script>
   <script src="./js/libs.min.js"></script>

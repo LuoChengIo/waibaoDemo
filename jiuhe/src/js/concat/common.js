@@ -58,6 +58,7 @@ $(function(){
 	$('.c-nav .c-back').on('click',function(){ // 返回
 		history.back()
 	})
+	$('.c-nav').addClass($('body').data('head-class'));
 	$('.c-nav .c-title').text(document.title)
 	$('.mobile-head .m-close').on('click',function(){ //导航关闭
 		$('.mobile-head').removeClass('slideInRight').addClass('slideOutRight')
@@ -73,4 +74,35 @@ $(function(){
 		$('.pc-nav.st').show();
 		$('.pc-nav.search').hide();
 	})
+	function gotoTop(min_height) {
+		$("#toTop").click(//定义返回顶部点击向上滚动的动画
+			function () {
+				$('html,body').animate({ scrollTop: 0 }, 300);
+			});
+		//获取页面的最小高度，无传入值则默认为600像素
+		min_height ? min_height = min_height : min_height = 600;
+		if( $(window).scrollTop()>min_height){
+			$("#toTop").fadeIn();
+		}
+		//为窗口的scroll事件绑定处理函数
+		var resizeTimer = null;
+		$(window).scroll(function () {
+			//获取窗口的滚动条的垂直位置
+			var s = $(window).scrollTop();
+			//当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+			if(resizeTimer){
+				clearTimeout(resizeTimer)
+			}
+			resizeTimer = setTimeout(function(){
+			if (s > min_height) {
+				console.log(2321)
+				$("#toTop").fadeIn();
+			} else {
+				$("#toTop").fadeOut();
+			};
+			}, 20);
+			
+		});
+	};
+	gotoTop($(window).height());
 })
