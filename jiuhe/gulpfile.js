@@ -150,7 +150,7 @@ gulp.task('watch', function () {
   gulp.watch(srcPath.image + '/**/*', ['images']);
   // 监听 js
   gulp.watch([srcPath.script + '/*.js', '!' + srcPath.script + '/*.min.js'], ['script']);
-  gulp.watch([srcPath.script + '/lib/*.js'], ['concat']);
+  gulp.watch([srcPath.script + '/concat/*.js'], ['concat']);
 });
 // 默认任务
 gulp.task('default', ['copy','watch']);
