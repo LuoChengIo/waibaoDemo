@@ -12,7 +12,13 @@ $(function(){
     on:{
       slideChange: function(){
         var ele = swiperV.slides[swiperV.activeIndex];
-        $('.c-nav').removeClass(headTHme).addClass($(ele).data('head'))
+        $('.c-nav').removeClass(headTHme).addClass($(ele).data('head'));
+        if(swiperV.isEnd){ // 是否最末
+          $('.index-next').hide()
+        }else{
+          $('.index-next').show()
+        }
+        
       },
     },
   });
@@ -42,7 +48,9 @@ $(function(){
       },
     },
   });
-  
+  $('.index-next').on('click',function(){
+    swiperV.slideNext()
+  })
   common.addResizeFuc(function(){
     indexBanner.updateSize()
     swiperV.updateSize()

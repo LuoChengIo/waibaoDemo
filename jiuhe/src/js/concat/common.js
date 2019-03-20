@@ -52,6 +52,8 @@
 	return  common
 }())
 $(function(){
+	document.body.addEventListener('touchstart', function(){ });
+	//-------------导航--------------
 	$('.c-nav .c-more').on('click',function(){ // 导航
 		$('.mobile-head').removeClass('slideOutRight dn').addClass('animated slideInRight');
 	})
@@ -74,11 +76,29 @@ $(function(){
 		$('.pc-nav.st').show();
 		$('.pc-nav.search').hide();
 	})
+	//-------------浮动客服--------------
+	$('[data-kefu="show"]').on('click',function(){ // 客服
+		$('.f-k-detail').removeClass('dn');
+		setTimeout(function() {
+			$('.f-k-detail').addClass('active');
+		}, 10);
+	})
+	$('[data-kefu="close"]').on('click',function(){ // 客服
+		$('.f-k-detail').removeClass('active');
+		setTimeout(function() {
+			$('.f-k-detail').addClass('dn');
+		}, 350);
+	})
+	//---------------------滚动置顶------------------------
+	function goTop(){
+		console.log(456)
+    var doc = document.body.scrollTop? document.body : document.documentElement;
+		Math.easeout(doc.scrollTop, 0, 4, function (value) {
+			doc.scrollTop = value;
+		});
+	}
 	function gotoTop(min_height) {
-		$("#toTop").click(//定义返回顶部点击向上滚动的动画
-			function () {
-				$('html,body').animate({ scrollTop: 0 }, 300);
-			});
+		$("#toTop").click(goTop);
 		//获取页面的最小高度，无传入值则默认为600像素
 		min_height ? min_height = min_height : min_height = 600;
 		if( $(window).scrollTop()>min_height){
@@ -94,11 +114,11 @@ $(function(){
 				clearTimeout(resizeTimer)
 			}
 			resizeTimer = setTimeout(function(){
+				console.log(123)
 			if (s > min_height) {
-				console.log(2321)
-				$("#toTop").fadeIn();
+				$("#toTop").show();
 			} else {
-				$("#toTop").fadeOut();
+				$("#toTop").hide();
 			};
 			}, 20);
 			
@@ -106,3 +126,20 @@ $(function(){
 	};
 	gotoTop($(window).height());
 })
+Math.easeout = function (A, B, rate, callback) {
+	if (A == B || typeof A != 'number') {
+	return;
+	}
+	B = B || 0;
+	rate = rate || 2;
+	var step = function () {
+	A = A + (B - A) / rate;
+	if (A < 1) {
+	callback(B, true);
+	return;
+	}
+	callback(A, false);
+	requestAnimationFrame(step);
+	};
+	step();
+};

@@ -1,6 +1,7 @@
+@import '../fonts/iconfont.css';
 @import './lib/base.css';
 @import './lib/animate.css';
-@import '../fonts/iconfont.css';
+
 /*=============================================
 =            覆盖bootstraps样式            =
 =============================================*/
@@ -14,6 +15,12 @@
 /*=============================================
 =            自定义公共部分            =
 =============================================*/
+.mobile-show{
+  display: block;
+  @media (min-width: 768px){
+    display: none;
+  }
+}
 /*****底部*****/
 .nav-foot{
   background-color: #fff;
@@ -338,6 +345,17 @@
       overflow: hidden;
       box-shadow: 0 0 10px rgba(0,0,0,.1);
       background-color: #fff;
+      transform-origin: bottom right;
+      transform: scale(.5);
+      transition: all .3s;
+      opacity: 0;
+      &.active{
+        transform: scale(.8);
+        opacity: 1;
+        @media (min-width: 768px){ 
+          transform: scale(1);
+        }
+      }
       .f-title{
         padding: 10px 15px;
         background-color: #d6000f;
