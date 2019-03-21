@@ -1,0 +1,98 @@
+@import './lib/variables.css';
+
+.banner {
+  height: 265px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#aboutNav{
+  font-size: 18px;
+  padding: 20px 0;
+  @media (min-width: 768px){
+    padding:25px 0 0 0;
+    border-bottom:1px solid #f2f2f2;
+  }
+  overflow:hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  .swiper-slide {
+    position: relative;
+    padding: 0px 20px;
+    @media (min-width: 768px){
+      font-size: 22px;
+      padding: 10px 35px;
+    }
+    width: auto;
+    color: $info;
+    transform: all .3s;
+    cursor: pointer;
+    &.active{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        content: '';
+        width: 57%;
+        height: 1px;
+        transform: translateX(-50%);
+        background-color: $secondary;
+      }
+    }
+    &:hover{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        content: '';
+        width: 57%;
+        height: 1px;
+        transform: translateX(-50%);
+        background-color: $secondary;
+      }
+    }
+  }
+  .swiper-wrapper{
+    @media (min-width: 768px){
+      justify-content: center;
+    }
+  }
+}
+.article-biaoti{
+  margin: 22px 0;
+  font-size: 18px;
+  @media (min-width: 768px){
+    font-size: 24px;
+    margin: 30px 0;
+  }
+}
+h2.article-biaoti{
+  font-size: 15px;
+  @media (min-width: 768px){
+    font-size: 22px;
+  }
+}
+.article-p{
+  margin: 22px 0;
+  line-height: 1.5;
+  font-size: 13px;
+  @media (min-width: 768px){
+    font-size: 16px;
+    margin: 30px 0;
+  }
+}
+h3.article-p{
+  font-size: 15px;
+  @media (min-width: 768px){
+    font-size: 20px;
+  }
+}
+.acot{
+  margin-bottom: 10px;
+  @media (min-width: 768px){
+    margin-bottom: 0;
+  }
+}

@@ -15,6 +15,39 @@
 /*=============================================
 =            自定义公共部分            =
 =============================================*/
+.article-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px 15px;
+  @media (min-width: 768px){
+    padding:1px 0;
+  }
+}
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.mobile-a-img{
+  overflow: hidden;
+  @media (max-width: 768px){
+    height: 300px;
+    img{
+      position: absolute;
+      left: 50%;
+      width: auto;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.bg-white{
+  background-color: #fff;
+}
 .mobile-show{
   display: block;
   @media (min-width: 768px){
@@ -96,11 +129,20 @@
     background-color: #f2f2f2
   }
 }
+[data-head-fiexd=true]{
+  padding-top: 56px;
+  @media (min-width: 768px){
+    padding-top: 70px;
+  }
+  @media (min-width: 1900px){
+    padding-top: 80px;
+  }
+}
 @media (min-width: 768px){
   .auto-foot-ct{
     .auto-contanter{
       min-height: 100%;
-      padding-bottom: 80px;
+      padding-bottom: 79px;
     }
     .auto-foot{
       margin-top: -80px;
@@ -137,6 +179,11 @@
       li{
         a{
           color: #FFF;
+        }
+        &.active{
+          a{
+            color: $secondary;
+          }
         }
         &:hover{
           a{
@@ -209,6 +256,11 @@
       a{
         color: $primary;
       }
+      &.active{
+        a{
+          color: $secondary;
+        }
+      }
       &:hover{
         a{
           color: $secondary;
@@ -273,6 +325,11 @@
       font-size: 15px;
       a{
         color: #323232;
+      }
+      &.active{
+        a{
+          color: $secondary;
+        }
       }
       &:active{
         background-color: #f2f2f2

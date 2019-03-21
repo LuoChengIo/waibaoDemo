@@ -165,6 +165,7 @@ a:focus, a:hover{
 .f12 { font-size: 12px; }
 .f13 { font-size: 13px; }
 .f14 { font-size: 14px; }
+.f15 { font-size: 15px; }
 .f16 { font-size: 16px; }
 .f18 { font-size: 18px; }
 .f20 { font-size: 20px; }
@@ -192,6 +193,7 @@ a:focus, a:hover{
 .nowrap { white-space: nowrap; }
 /* word-wrap */
 .bk { word-wrap: break-word; }
+article{word-wrap: break-word;}
 /* vertical-align */
 .vm { vertical-align: middle; }
 .vtb { vertical-align: text-bottom; }

@@ -54,6 +54,16 @@
 $(function(){
 	document.body.addEventListener('touchstart', function(){ });
 	//-------------导航--------------
+	// var autoscrsd = function(){
+	// 	var autoct = $('.auto-contanter')	
+	// 	if(autoct.length&&autoct.data('head-fiexd')){
+	// 		autoct.css('padding-top',$('.c-nav').outerHeight());
+	// 	}
+	// }
+	// autoscrsd();
+	// common.addResizeFuc(function(){
+	//   autoscrsd();
+	// })
 	$('.c-nav .c-more').on('click',function(){ // 导航
 		$('.mobile-head').removeClass('slideOutRight dn').addClass('animated slideInRight');
 	})
@@ -125,6 +135,7 @@ $(function(){
 		});
 	};
 	gotoTop($(window).height());
+	
 })
 Math.easeout = function (A, B, rate, callback) {
 	if (A == B || typeof A != 'number') {
