@@ -12,6 +12,7 @@ $(function(){
     on:{
       slideChange: function(){
         var ele = swiperV.slides[swiperV.activeIndex];
+        console.log($(ele).data('head'))
         $('.c-nav').removeClass(headTHme).addClass($(ele).data('head'));
         if(swiperV.isEnd){ // 是否最末
           $('.index-next').hide()
@@ -44,6 +45,7 @@ $(function(){
           }
           var ele = indexBanner.slides[indexBanner.activeIndex]
           $('.c-nav').removeClass(headTHme).addClass($(ele).data('head'))
+          $('.index-banner').parent().data('head',$(ele).data('head'))
         } 
       },
     },

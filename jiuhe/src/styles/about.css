@@ -96,3 +96,71 @@ h3.article-p{
     margin-bottom: 0;
   }
 }
+/**
+ *
+ * 加入我们
+ *
+ */
+.join-title{
+  padding: 35px 0 ;
+  font-size: 24px;
+}
+.join-job{
+  border-top: 1px solid #e1e1e1;
+}
+.mailto{
+  color: #0076ec;
+}
+.j-item{
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+  @media (min-width: 768px){
+    font-size: 22px;
+  }
+  .j-item-hd{
+    position: relative;
+    padding: 2em 4em;
+    h4{
+      font-size: inherit;
+    }
+    .j-ps{
+      font-size: 0.73em;
+    }
+    .j-l-img{
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 2.18em;
+      transform: translateY(-50%);
+    }
+    .icon{
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      font-size: 1.2em;
+      color: #939393;
+    }
+    
+  }
+  .j-l-ct{
+    display: none;
+    line-height: 2;
+    padding: 0 8px 2em 8px;
+    h5{
+      font-size: 0.73em;
+      margin: 1em 0;
+    }
+    p{
+      font-size: 0.64em;
+    }
+  }
+  &.active{
+    .icon{
+      transform: translateY(-50%) rotate(45deg);
+    }
+    .j-l-ct{
+      display: block;
+    }
+  }
+}

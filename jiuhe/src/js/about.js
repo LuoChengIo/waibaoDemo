@@ -16,4 +16,8 @@ $(function () {
   common.addResizeFuc(function(){
     navSwper.updateSize()
   })
+  // 加入职位切换
+  $('.j-item').on('click',function(){
+    $(this).toggleClass('active');
+  })
 })
