@@ -1,0 +1,124 @@
+@import './lib/variables.css';
+#caseNav{
+  padding: 20px 0;
+  overflow:hidden;
+  margin: 0 auto;
+  font-size: 18px;
+  @media (min-width: 768px){
+    padding: 30px 0;
+  }
+  .swiper-slide {
+    position: relative;
+    margin: 0 20px;
+    @media (min-width: 768px){
+      margin: 0 25px;
+    }
+    width: auto;
+    color: $info;
+    transform: all .3s;
+    cursor: pointer;
+    &.active{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $secondary;
+      }
+    }
+    &:hover{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $secondary;
+      }
+    }
+  }
+  .swiper-wrapper{
+    @media (min-width: 768px){
+      justify-content: center;
+    }
+  }
+}
+.no-data{
+  padding: 50% 0
+}
+.case-img{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.case-list{
+  padding: 0;
+  @media (min-width: 768px){
+    padding: 0 65px;
+  }
+  .row{
+    margin: 0;
+  }
+  .col-xs-12,.col-sm-6{
+    padding: 0;
+  }
+}
+.case-more{
+  padding: 30px 0 ;
+  cursor: pointer;
+  @media (min-width: 768px){
+    padding: 90px 0;
+  }
+}
+.case-item{
+  .hover-actve{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+    .description{
+      font-size: 20px;
+      opacity: 0;
+      transition: all .3s;
+      transform: translateY(-20px);
+    }
+    .description-info{
+      font-size: 28px;
+      opacity: 0;
+      transition: all .3s;
+      transform: translateY(20px);
+    }
+  }
+  .hover-actve-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    transition: all .3s;
+  }
+  &:hover{
+    .hover-actve-bg{
+      background-color: rgba(0,0,0,.6);
+    }
+    .hover-actve{
+      .description{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      .description-info{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+}
