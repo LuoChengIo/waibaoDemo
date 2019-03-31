@@ -7,15 +7,17 @@ $(function () {
     }
   })
   // 初始化导航
-  var navSwper = new Swiper('#aboutNav', {
-    freeMode: true,
-    slidesPerView: 'auto',
-    freeModeSticky: true,
-    initialSlide:initialSlide,
-  });
-  common.addResizeFuc(function(){
-    navSwper.updateSize()
-  })
+  if($('#aboutNav').length){
+    var navSwper = new Swiper('#aboutNav', {
+      freeMode: true,
+      slidesPerView: 'auto',
+      freeModeSticky: true,
+      initialSlide:initialSlide,
+    });
+    common.addResizeFuc(function(){
+      navSwper.updateSize()
+    })
+  }
   // 加入职位切换
   $('.j-item').on('click',function(){
     $(this).toggleClass('active');

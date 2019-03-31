@@ -54,8 +54,10 @@ a:link {
 /* 默认不显示下划线，保持页面简洁 */
 ins, a {
   text-decoration: none;
+  color: currentColor;
 }
 a:focus, a:hover{
+  color: currentColor;
   text-decoration: none;
 }
 /* ---------------------single CSS----------------------- */
