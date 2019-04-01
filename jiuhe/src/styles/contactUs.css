@@ -1,0 +1,27 @@
+@import './lib/variables.css';
+.baduMap{
+  width: auto;
+  height: 320px;
+  margin: 0 -15px;
+  @media (min-width: 768px){
+    height: 500px;
+    margin:0;
+  }
+}
+h4{
+  line-height: 1.5;
+}
+.contact-us{
+  h4{
+    font-size: 14px;
+    @media (min-width: 768px){
+      font-size: 20px;
+    }
+  }
+  .company{
+    font-size: 18px;
+    @media (min-width: 768px){
+      font-size: 20px;
+    }
+  }
+}
