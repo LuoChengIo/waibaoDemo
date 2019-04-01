@@ -125,6 +125,9 @@
 .cd-title{
   font-size: 18px;
   margin: 25px 0;
+  @media (min-width: 768px){
+    margin: 60px 0 40px 0;
+  }
 }
 .cd-description{
   font-size: 14px;
