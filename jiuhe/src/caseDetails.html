@@ -34,12 +34,14 @@
       <img class="db pct100" src="./images/case/case1.jpg" alt="" srcset="">
     </div>
     <!-- 案例详情 -->
-    <div class=" bg-white">
-
-
+    <div class="p1 bg-white">
       <div class="cd-container ">
         <h1 class="n cd-title">
           <span class="red-bd">收藏中国之前的中国--仰韶彩陶坊</span>
+          <!-- pc端分享 -->
+          <div class="r f0 hidden-xs">
+            <include src="templates/share.html"></include>
+          </div>
         </h1>
         <p class="cd-description">
           仰韶彩陶坊酒的设计是流动的历史，凝固的文化。酒瓶的设计灵感源于6000年前仰韶文化出土陶器中鱼纹葫芦瓶的外形。源于文物而不拘泥于文物，开创性地把葫芦瓶分上下两部分，上瓶为50ml，下瓶为450ml，可分别盛装不同酒度的酒，自由调兑实现多种饮酒享受。上下瓶结合部，采用独创的凹凸对铆结构，不但使上下瓶结合严密，而且下瓶的对铆凸出又是一个导流槽，方便倒酒，用仿青铜金属箍连接，使整体瓶形浑然一体。外盒设计结构简洁，开启方便，环保材质，创意简约而不简单，元素欲露还藏，体现中华文化的含蓄、和谐，完美表现了古今辉映的交融之美。以至于该产品上市，竞相珍藏，产品升值，且一直供不应求，从而验证了设计的力量是无穷的。
@@ -71,6 +73,10 @@
       <img class="db pct100 cd-detail-img" src="./images/case/case4.jpg" alt="" srcset="">
       <img class="db pct100 cd-detail-img" src="./images/case/case5.jpg" alt="" srcset="">
       <img class="db pct100 cd-detail-img" src="./images/case/case6.jpg" alt="" srcset="">
+      <!-- 移动端分享 -->
+      <div class="f0 visible-xs-block">
+        <include src="templates/share.html"></include>
+      </div>
       <!-- 上一篇下一篇 -->
       <div class="cd-prev-next tc">
         <a href="javascript:" target="_blank" class="prev dib vm ell">上一篇<span class="hidden-xs">：茅塔范德萨发生大</span></a>
@@ -148,6 +154,7 @@
   <script src="./js/lib/include.js"></script>
   <script src="./js/lib/jquery-3.3.1.min.js"></script>
   <script src="./js/libs.min.js"></script>
+  <script src="./js/lib/social-share.min.js"></script>
   <script src="./js/case.min.js"></script>
 </body>
 
