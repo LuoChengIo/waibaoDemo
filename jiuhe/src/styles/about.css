@@ -164,3 +164,44 @@ h3.article-p{
     }
   }
 }
+/*=============================================
+=            奖项            =
+=============================================*/
+.award-title{
+  font-size: 18px;
+  padding: 3.25em 0;
+  @media (min-width: 768px){
+    font-size: 24px;
+  }
+}
+.award-col{
+  font-size: 12px;
+  padding: 1.75em 0;
+  @media (min-width: 768px){
+    font-size: 16px;
+  }
+}
+.award-tab{
+  .award-col{
+    font-size: 14px;
+    padding: 0 0 1.75em 0;
+    color: #929292;
+    @media (min-width: 768px){
+      font-size: 18px;
+    }
+  }
+}
+.award-row{
+  margin: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pb30{
+  padding-bottom: 30px;
+}
+.award-table{
+  padding-bottom: 40px;
+  @media (min-width: 768px){
+    padding-bottom: 170px;
+  }
+}
+/*=====  End of 奖项  ======*/

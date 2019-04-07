@@ -1,0 +1,145 @@
+@import './lib/variables.css';
+#newsNav{
+  padding: 20px 0;
+  overflow:hidden;
+  margin: 0 auto;
+  font-size: 18px;
+  @media (min-width: 768px){
+    padding: 30px 0;
+  }
+  .swiper-slide {
+    position: relative;
+    margin: 0 20px;
+    @media (min-width: 768px){
+      margin: 0 25px;
+    }
+    width: auto;
+    color: $info;
+    transform: all .3s;
+    cursor: pointer;
+    &.active{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $secondary;
+      }
+    }
+    &:hover{
+      color: $dark;
+      &:after{
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $secondary;
+      }
+    }
+  }
+}
+.nav-ct{
+  background-color: #fff;
+  @media (min-width: 768px){
+    background-color: transparent;
+  }
+}
+.no-data{
+  padding: 20% 0;
+}
+.news-list{
+  background-color: #fff;
+  @media (min-width: 768px){
+    background-color: transparent;
+  }
+}
+.news-item{
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 30px;
+  @media (min-width: 768px){
+    margin-bottom: 55px;
+    padding: 37px 57px 57px 57px;
+  }
+  .item-img{
+    width: 100%;
+    @media (min-width: 768px){
+      float: right;
+      width: 40%;
+    }
+  }
+  .title{
+    font-size: 17px;
+    margin: 15px 0;
+    @media (min-width: 768px){
+      font-size: 26px;
+    }
+  }
+  .description{
+    font-size: 13px;
+    line-height: 1.5;
+    color: $info;
+    @media (min-width: 768px){
+      font-size: 16px;
+      color: $dark;
+    }
+  }
+  .more{
+    text-decoration: underline;
+    &:hover{
+      color: $secondary;
+    }
+  }
+  .time{
+    margin: 15px 0;
+    font-size: 12px;
+    @media (min-width: 768px){
+      font-size: 16px;
+    }
+  }
+  .text-cts{
+    @media (min-width: 768px){
+      width: 60%;
+      padding-right: 48px;
+    }
+  }
+  .news-label{
+    font-size: 13px;
+    color: $info;
+    padding: 15px 0 25px 0;
+    @media (min-width: 768px){
+      font-size: 16px;
+      padding: 0;
+      padding-top: 60px;
+    }
+    .s-label{
+      margin-right: 15px;
+      &:hover{
+        color: $dark;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.news-share{
+  font-size: 16px;
+  margin-top: 15px;
+  height: 25px;
+  cursor: pointer;
+  .se2{
+    display: none;
+  }
+  &:hover{
+    .se1{
+      display: none;
+    }
+    .se2{
+      display: block;
+    }
+  }
+}

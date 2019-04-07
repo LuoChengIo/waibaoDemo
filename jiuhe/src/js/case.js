@@ -14,6 +14,7 @@ $(function () {
       slidesPerView: 'auto',
       freeModeSticky: true,
       initialSlide: initialSlide,
+      centerInsufficientSlides: true,
     });
     common.addResizeFuc(function () {
       navSwper.updateSize()

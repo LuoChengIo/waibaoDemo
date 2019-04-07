@@ -43,9 +43,6 @@
     }
   }
   .swiper-wrapper{
-    @media (min-width: 768px){
-      justify-content: center;
-    }
   }
 }
 .no-data{
@@ -163,9 +160,6 @@
       width: 300px;
     }
   }
-}
-.red-bd{
-  border-bottom: 1px solid #d6000f;
 }
 .cd-container{
   width: 100%;
