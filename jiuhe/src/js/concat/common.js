@@ -250,3 +250,38 @@ Math.easeout = function (A, B, rate, callback) {
 	};
 	step();
 };
+/**
+ * url地址修改
+ * @param url 待修改url
+ * @param arg 修改的参数名
+ * @param arg_val 修改的具体值
+ * @returns {String}
+ */
+function changeURLArg(url, arg, arg_val) {
+	var pattern = arg + '=([^&]*)';
+	var replaceText = arg + '=' + arg_val;
+	if (url.match(pattern)) {
+			var tmp = '/(' + arg + '=)([^&]*)/gi';
+			tmp = url.replace(eval(tmp), replaceText);
+			return tmp;
+	} else {
+			if (url.match('[\?]')) {
+					return url + '&' + replaceText;
+			} else {
+					return url + '?' + replaceText;
+			}
+	}
+}
+
+/**
+* 获取url里的参数
+* @param arg 参数名
+* @returns
+*/
+function getURLString(arg) {
+	var reg = new RegExp("(^|&)" + arg + "=([^&]*)(&|$)", "i");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null)
+			return unescape(r[2]);
+	return null;
+}

@@ -33,16 +33,16 @@
     <div class="nav-ct">
       <nav id="newsNav">
         <div class="swiper-wrapper">
-          <a href="javascript:" class="swiper-slide active">全部资讯</a>
-          <a href="javascript:" class="swiper-slide">新闻</a>
-          <a href="javascript:" class="swiper-slide">观点</a>
+          <a href="./newsList.html?type=1" class="swiper-slide active">全部资讯</a>
+          <a href="./newsList.html?type=2" class="swiper-slide">新闻</a>
+          <a href="./newsList.html?type=3" class="swiper-slide">观点</a>
         </div>
       </nav>
     </div>
     <!-- 资讯列表 -->
     <div class="article-container news-list">
       <ul>
-        <li class="news-item clearfix">
+        <li class="news-item clearfix poi">
           <img class="item-img db" src="./images/default-news.jpg" alt="" srcset="">
           <div class="text-cts">
             <div class="f16 time">
@@ -71,7 +71,7 @@
             </div>
           </div>
         </li>
-        <li class="news-item clearfix">
+        <li class="news-item clearfix poi">
           <img class="item-img db" src="./images/default-news.jpg" alt="" srcset="">
           <div class="text-cts">
             <div class="f16 time"><img class="vm dib" src="./images/time-icon.jpg" alt="" srcset="">
@@ -87,11 +87,32 @@
             <p class="news-label">
               <span>标签：</span><a target="_blank" href="javascript:" class="s-label">设计公司</a><a target="_blank" href="javascript:" class="s-label">酒包装设计</a><a target="_blank" href="javascript:" class="s-label">九和包装设计</a>
             </p>
+            <div class="news-share hidden-xs">
+              <div class="se1">
+                <img class="dib vm" src="./images/share-yuan.jpg" alt="" srcset="">
+                <span class="dib vm">分享消息</span>
+              </div>
+              <div class="se2 f0">
+                <include src="templates/share.html"></include>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
       <!-- 分页 -->
-      <div class="pagination"></div>
+      <div class="v-pagination page-ct" data-page-num="12" data-page-size="12" data-page-name="pageNum">
+        <!-- <span class="v-page prev">
+          <span class="iconfont">&#xe605;</span>
+        </span>
+        <span class="v-page active">1</span>
+        <span class="v-page">...</span>
+        <a class="v-page" href="#">3</a>
+        <a class="v-page" href="#">4</a>
+        <a class="v-page" href="#">5</a>
+        <span class="v-page">...</span>
+        <a class="v-page" href="#">10</a>
+        <a class="v-page next" href="#"><span class="iconfont">&#xe633;</span></a> -->
+      </div>
     </div>
 
     <!-- 无搜索内容 -->

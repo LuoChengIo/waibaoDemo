@@ -32,7 +32,6 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-
 /*=====  End of 覆盖bootstraps样式 ======*/
 
 /*=============================================
@@ -982,6 +981,65 @@
     @media (min-width: 768px) {
       height: 250px;
       padding: 90px 30px;
+    }
+  }
+}
+
+/**
+ *
+ * 分页
+ *
+ */
+.v-pagination{
+  font-size: 0;
+  .v-page{
+    display: inline-block;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #e9e9e9;
+    text-align: center;
+    @media (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-color: transparent;
+      background-color: transparent;
+      color: #929292;
+    }
+    & + .v-page{
+      margin-left: 8px;
+      @media (max-width: 768px) {
+        margin-left: 4px;
+      }
+    }
+    .iconfont{
+      font-size: 14px;
+    }
+    &.active{
+      background-color: #929292;
+      color: #fff;
+      @media (max-width: 768px) {
+        background-color: transparent;
+        color: #2c2c2c;
+      }
+    }
+    &.next{
+    }
+  }
+  a.v-page{
+    transition: all .3s;
+    &:hover{
+      border-color: #d6000f;
+      color: #d6000f;
+      @media (max-width: 768px) {
+        border-color: transparent;
+        color: #2c2c2c;
+      }
     }
   }
 }
