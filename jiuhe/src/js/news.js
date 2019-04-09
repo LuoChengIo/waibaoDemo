@@ -85,4 +85,22 @@ $(function () {
     pageHtml+='<a class="v-page next" href="'+changeURLArg(location.href,field,pageNum+1)+'"><span class="iconfont">&#xe633;</span></a>';
   }
   $('.v-pagination').html(pageHtml);
+
+
+  // 案例详情
+  // 初始化
+  if($('#newsRecommend').length){
+    var newsRecommend = null;
+    if(common.cwidth>750){
+      newsRecommend = new Swiper('#newsRecommend', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      });
+    }else{
+      newsRecommend = new Swiper('#newsRecommend', {
+        slidesPerView: 'auto',
+        spaceBetween: 10
+      });
+    }
+  }
 })
