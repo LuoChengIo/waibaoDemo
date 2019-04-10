@@ -94,7 +94,7 @@ $(function () {
     if(common.cwidth>750){
       newsRecommend = new Swiper('#newsRecommend', {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 30,
       });
     }else{
       newsRecommend = new Swiper('#newsRecommend', {
@@ -102,5 +102,8 @@ $(function () {
         spaceBetween: 10
       });
     }
+    common.addResizeFuc(function () {
+      newsRecommend.updateSize()
+    })
   }
 })
