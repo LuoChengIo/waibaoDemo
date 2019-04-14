@@ -185,7 +185,7 @@ h3.article-p{
   .award-col{
     font-size: 14px;
     padding: 0 0 1.75em 0;
-    color: #929292;
+    color: $info;
     @media (min-width: 768px){
       font-size: 18px;
     }
@@ -205,3 +205,99 @@ h3.article-p{
   }
 }
 /*=====  End of 奖项  ======*/
+
+/*=============================================
+=            服务            =
+=============================================*/
+.module-hd{
+  position: relative;
+  margin: 1.71em 0 0.253em 0;
+  padding-left: 1.51em;
+  font-size: 79px;
+  .mh-title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #D6000F;
+    line-height: 1;
+  }
+  .mh-description{
+    width: auto;
+    h2{
+      font-size: 0.456em;
+    }
+    p{
+      margin-top: 0.5em;
+      font-size: 0.2278em;
+      color: $info;
+    }
+  }
+}
+.service-content-list{
+  .sc-item{
+    padding: 18px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .left-ct{
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    color: #323232;
+    font-size: 30px;
+    .ca{
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 126px;
+      height: 126px;
+      border-radius: 999px;
+      border: 5px solid #323232;
+    }
+    .cb{
+      margin-top: 30px;
+    }
+  }
+  .right-ct{
+    margin-left: 315px;
+    .ca{
+      font-size:26px;
+      margin: 2.7em 0 0.769em 0;
+    }
+    .cb{
+      font-size: 16px;
+      color: $info;
+      height: 116px;
+      overflow: hidden;
+      line-height: 1.87;
+    }
+    .more-btn{
+      display: inline-block;
+      font-size:14px;
+      line-height: 1;
+      color: $info;
+      padding: 10px 22px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      transition: all .3s;
+      border: 1px solid #f2f2f2;
+      &:hover{
+        border-color: $secondary;
+        color: $secondary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.service-process{
+  margin: 40px 0 100px 0;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  .sp-item{
+    width: 280px;
+    padding: 20px 0 10px 40px;
+  }
+}
+
+/*=====  End of 服务  ======*/
+
