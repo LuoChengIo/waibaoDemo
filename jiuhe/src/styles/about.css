@@ -70,6 +70,7 @@
   }
 }
 .article-detail{
+  padding: 50px 0;
   overflow: hidden;
   img{
     max-width: 100%;
@@ -400,6 +401,9 @@ h3.article-p{
 .disb-share{
   margin: 50px 0 90px 0;
 }
-
+.sd-header{
+  height: 330px;
+  background-color: #006f6b;
+}
 /*=====  End of 服务  ======*/
 
