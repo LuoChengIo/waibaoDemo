@@ -69,6 +69,12 @@
     margin: 30px 0;
   }
 }
+.article-detail{
+  overflow: hidden;
+  img{
+    max-width: 100%;
+  }
+}
 h2.article-biaoti{
   font-size: 15px;
   @media (min-width: 768px){
@@ -211,9 +217,13 @@ h3.article-p{
 =============================================*/
 .module-hd{
   position: relative;
-  margin: 1.71em 0 0.253em 0;
+  margin: 1em 0 0.253em 0;
   padding-left: 1.51em;
-  font-size: 79px;
+  font-size: 50px;
+  @media (min-width: 768px){
+    font-size: 79px;
+    margin: 1.71em 0 0.253em 0;
+  }
   .mh-title{
     position: absolute;
     top: 50%;
@@ -254,20 +264,28 @@ h3.article-p{
     }
   }
   .left-ct{
-    width: 290px;
-    height: 290px;
+    width: 100%;
+    height: auto;
     text-align: center;
     color: #323232;
     font-size: 30px;
     background-position: center;
     background-size: 0;
     background-repeat: no-repeat;
+    @media (min-width: 768px){
+      width: 290px;
+      height: 290px;
+      float: left;
+    }
     .ca{
       margin: 0 auto;
-      margin-top: 50px;
+      margin-top: 25px;
       width: 126px;
       height: 126px;
       border-radius: 999px;
+      @media (min-width: 768px){
+        margin-top: 50px;
+      }
       .ca-ing,.ca-active{
         display: block;
         width: 100%;
@@ -283,10 +301,22 @@ h3.article-p{
     
   }
   .right-ct{
-    margin-left: 315px;
+    @media (min-width: 768px){
+      margin-left: 315px;
+    }
     .ca{
-      font-size:26px;
-      margin: 2.7em 0 0.769em 0;
+      font-size:18px;
+      margin: 1.7em 0 0.769em 0;
+      @media (min-width: 768px){
+        font-size:26px;
+        margin: 2.7em 0 0.769em 0;
+      }
+    }
+    .tr{
+      text-align: center;
+      @media (min-width: 768px){
+        text-align: right;
+      }
     }
     .cb{
       font-size: 16px;
@@ -320,8 +350,12 @@ h3.article-p{
   padding: 20px 20px;
   .sp-item{
     float: left;
-    width: 280px;
-    padding: 20px 0 10px 40px;
+    width: 100%;
+    padding: 10px 0 5px 20px;
+    @media (min-width: 768px){
+      width: 280px;
+      padding: 20px 0 10px 40px;
+    }
     .ca{
       margin-right: 30px;
       width: auto;
@@ -336,8 +370,11 @@ h3.article-p{
         transition: all .3s;
       }
       .ca-b{
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 15px;
+        @media (min-width: 768px){
+          font-size: 24px;
+        }
       }
       .ca-c{
         font-size:14px;
@@ -359,6 +396,9 @@ h3.article-p{
       }
     }
   }
+}
+.disb-share{
+  margin: 50px 0 90px 0;
 }
 
 /*=====  End of 服务  ======*/
