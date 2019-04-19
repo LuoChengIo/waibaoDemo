@@ -22,4 +22,17 @@ $(function () {
   $('.j-item').on('click',function(){
     $(this).toggleClass('active');
   })
+
+  // 服务详情
+  if($('#serviceNav').length){
+    var serviceNav = new Swiper('#serviceNav', {
+      freeMode: true,
+      slidesPerView: 'auto',
+      freeModeSticky: true,
+      initialSlide:initialSlide,
+    });
+    common.addResizeFuc(function(){
+      serviceNav.updateSize()
+    })
+  }
 })

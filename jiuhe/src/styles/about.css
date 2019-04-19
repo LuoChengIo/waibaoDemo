@@ -404,6 +404,20 @@ h3.article-p{
 .sd-header{
   height: 330px;
   background-color: #006f6b;
+  .swiper-container{
+    padding: 63px 0 56px 0;
+    .ca{
+      display: block;
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+    }
+    .cb{
+      font-size: 30px;
+      margin-top: 25px;
+    }
+  }
+  
 }
 /*=====  End of 服务  ======*/
 
