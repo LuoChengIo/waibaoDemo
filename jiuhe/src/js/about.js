@@ -1,7 +1,7 @@
 $(function () {
   // 获取当前活动的nav
   var initialSlide = 1;
-  $('.swiper-wrapper .swiper-slide').each(function(i){
+  $('#aboutNav .swiper-slide').each(function(i){
     if($(this).hasClass('active')){
       initialSlide = i
     }
@@ -25,11 +25,30 @@ $(function () {
 
   // 服务详情
   if($('#serviceNav').length){
+    var iSlide = 1;
+    $('#serviceNav .swiper-slide').each(function(i){
+      if($(this).hasClass('active')){
+        iSlide = i
+      }
+    })
     var serviceNav = new Swiper('#serviceNav', {
-      freeMode: true,
-      slidesPerView: 'auto',
-      freeModeSticky: true,
-      initialSlide:initialSlide,
+      slidesPerView: 5,
+      initialSlide: iSlide,
+      centeredSlides: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
     });
     common.addResizeFuc(function(){
       serviceNav.updateSize()
