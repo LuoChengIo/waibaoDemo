@@ -19,8 +19,11 @@ $(function () {
     })
   }
   // 加入职位切换
+  $('.j-item').each(function(){
+    
+  })
   $('.j-item').on('click',function(){
-    $(this).toggleClass('active');
+    $(this).toggleClass('active').siblings().removeClass('active');
   })
 
   // 服务详情
@@ -34,7 +37,6 @@ $(function () {
     var serviceNav = new Swiper('#serviceNav', {
       slidesPerView: 5,
       initialSlide: iSlide,
-      centeredSlides: true,
       breakpoints: {
         1024: {
           slidesPerView: 4,

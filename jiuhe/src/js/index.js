@@ -6,20 +6,24 @@ $(function(){
   var swiperV = new Swiper('.swiper-container-v', {
     direction: 'vertical',
     mousewheel: true,
+    pagination: {
+      el: '.v-swiper-pagination',
+      clickable: true
+    },
     lazy: {
       loadPrevNext: true,
     },
     on:{
       slideChange: function(){
         var ele = swiperV.slides[swiperV.activeIndex];
-        console.log($(ele).data('head'))
         $('.c-nav').removeClass(headTHme).addClass($(ele).data('head'));
-        if(swiperV.isEnd){ // 是否最末
-          $('.index-next').hide()
-        }else{
-          $('.index-next').show()
-        }
-        
+        if(common.cwidth<768){
+          if(swiperV.isEnd){ // 是否最末
+            $('.index-next').hide()
+          }else{
+            $('.index-next').show()
+          }
+        } 
       },
     },
   });
@@ -27,6 +31,8 @@ $(function(){
   var indexBanner = new Swiper('.index-banner', {
     autoplay: true,
     loop: true,
+    speed:700,
+    effect : 'fade',
     lazy: {
       loadPrevNext: true,
     },

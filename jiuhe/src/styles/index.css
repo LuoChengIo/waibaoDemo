@@ -36,21 +36,31 @@
         transition: all .3s;
         opacity: 0;
         &:hover{
-            opacity: 1 !important;
+            opacity: 0.6 !important;
         }
     }
     .swiper-button-prev{
-        left: 150px;
+        left: -47px;
         background-image: url('../images/swiper-prev.png');
     }
     .swiper-button-next{
-        right: 150px;
+        right: -47px;
         background-image: url('../images/swiper-next.png');
     }
     &:hover{
         .swiper-button-prev,.swiper-button-next{
-            opacity: .6;
+            opacity: 1;
         }
+        .swiper-button-prev{
+            left: 0;
+        }
+        .swiper-button-next{
+            right: 0;
+        }
+    }
+    .v-swiper-pagination{
+        left: 10%;
+        right: auto;
     }
 }
 .index-next{
