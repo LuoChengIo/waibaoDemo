@@ -178,8 +178,10 @@
     font-size: 13px;
     display: inline-block;
     padding: 4px 10px;
+    color: #666;
     border: 1px solid #eeeeee;
     margin-right:12px;
+    margin-bottom: 5px;
   }
 }
 .share-ct{
@@ -216,7 +218,7 @@
     padding-bottom: 50px;
   }
   .news-ite{
-    width: 150px;
+    width: 45%;
   }
   .n-s-details{
     padding: 8px;
@@ -233,7 +235,7 @@
   }
   .news-img{
     display: block;
-    width: 150px;
+    width: 100%;
     @media (min-width: 768px){
       width: 100%;
     }

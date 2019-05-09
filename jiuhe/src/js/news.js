@@ -90,18 +90,16 @@ $(function () {
   // 案例详情
   // 初始化
   if($('#newsRecommend').length){
-    var newsRecommend = null;
-    if(common.cwidth>750){
-      newsRecommend = new Swiper('#newsRecommend', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      });
-    }else{
-      newsRecommend = new Swiper('#newsRecommend', {
-        slidesPerView: 'auto',
-        spaceBetween: 10
-      });
-    }
+    var newsRecommend = new Swiper('#newsRecommend', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+        }
+      }
+    });
     common.addResizeFuc(function () {
       newsRecommend.updateSize()
     })

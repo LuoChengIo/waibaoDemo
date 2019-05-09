@@ -37,6 +37,7 @@ $(function () {
     var serviceNav = new Swiper('#serviceNav', {
       slidesPerView: 5,
       initialSlide: iSlide,
+      centerInsufficientSlides: true,
       breakpoints: {
         1024: {
           slidesPerView: 4,
@@ -45,10 +46,10 @@ $(function () {
           slidesPerView: 3,
         },
         640: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         320: {
-          slidesPerView: 1,
+          slidesPerView: 3,
         }
       }
     });

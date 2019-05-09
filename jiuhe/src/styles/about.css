@@ -433,7 +433,10 @@ h3.article-p{
     align-items: center;
     
   }
-  height: 330px;
+  height: 280px;
+  @media (min-width: 768px){
+    height: 330px;
+  }
   background-color: #006f6b;
   animation: gradient 12s linear infinite alternate;
   .swiper-container{
@@ -449,16 +452,23 @@ h3.article-p{
       }
     }
     .ca{
-      width: 130px;
-      height: 130px;
+      width: 80%;
+      height: 80%;
       display: block;
       margin: 0 auto;
+      @media (min-width: 768px){
+        width: 130px;
+        height: 130px;
+      }
     }
     .cb{
-      font-size: 30px;
+      font-size: 20px;
       margin-top: 25px;
       color: #fff;
       text-align: center;
+      @media (min-width: 768px){
+        font-size: 30px;
+      }
     }
   }
   
