@@ -124,17 +124,43 @@ $(function () {
 				clearTimeout(resizeTimer)
 			}
 			resizeTimer = setTimeout(function () {
-				console.log(123)
-				if (s > min_height) {
-					$("#toTop").show();
+				if (s > $(window).height()) {
+					$("#toTop").fadeIn();
 				} else {
-					$("#toTop").hide();
+					$("#toTop").fadeOut();
 				};
 			}, 20);
 
 		});
 	};
 	gotoTop($(window).height());
+	//---------------------联系我们表单------------------------
+	if($('[data-portamento=child]').length){
+		//为窗口的scroll事件绑定处理函数
+		var resizeTimer = null;
+		$(window).scroll(function () {
+			//获取窗口的滚动条的垂直位置
+			if (resizeTimer) {
+				clearTimeout(resizeTimer)
+			}
+			resizeTimer = setTimeout(function () {
+				var cdom = $('[data-portamento=child]'),
+				 		s = $(window).scrollTop(), // 滚动距离
+				 		sTop = cdom.parent().offset().top-$('.c-nav').outerHeight(), // 当前元素距顶部的距离
+						hClass = cdom.data('top-class') || 0,// 距离另外一个元素的距离
+						top= 0;
+				cdom.parent().height(cdom.outerHeight()); // 给当前元素的父元素一个高度，防止当前元素fixed定位导致页面抖动
+				if(hClass){
+					top = $(hClass).outerHeight();
+				}
+				if(s>sTop){
+					cdom.css({ "position": "fixed", "top": top, "left":0, "right":0,"z-index":100 ,'box-shadow':'0 1px 1px rgba(34,25,25,.1)'});
+				}else{
+					cdom.removeAttr("style");
+				}
+			}, 20);
+		});
+	}
 	//---------------------联系我们表单------------------------
 	if ($('.contact-from').length) {
 		$('.team-item').each(function () {

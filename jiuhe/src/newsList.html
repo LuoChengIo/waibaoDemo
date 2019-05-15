@@ -30,14 +30,16 @@
   <include src="templates/header.html"></include>
   <div class="auto-contanter" data-head-fiexd="true">
     <!-- 导航 -->
-    <div class="nav-ct">
-      <nav id="newsNav">
-        <div class="swiper-wrapper">
-          <a href="./newsList.html?type=1" class="swiper-slide active">全部资讯</a>
-          <a href="./newsList.html?type=2" class="swiper-slide">新闻</a>
-          <a href="./newsList.html?type=3" class="swiper-slide">观点</a>
-        </div>
-      </nav>
+    <div data-portamento="parent">
+      <div class="nav-ct" data-portamento="child" data-top-class='.c-nav'>
+        <nav id="newsNav">
+          <div class="swiper-wrapper">
+            <a href="./newsList.html?type=1" class="swiper-slide active">全部资讯</a>
+            <a href="./newsList.html?type=2" class="swiper-slide">新闻</a>
+            <a href="./newsList.html?type=3" class="swiper-slide">观点</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- 资讯列表 -->
     <div class="article-container news-list">

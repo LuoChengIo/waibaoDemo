@@ -33,16 +33,18 @@
       <img class="db pct100" src="./images/about/aboutTeam1.jpg" alt="" srcset="">
     </section>
     <!-- 导航 -->
-    <div class="bg-white">
-      <nav id="aboutNav">
-        <div class="swiper-wrapper">
-          <a  href="./about.html" class="swiper-slide">关于</a>
-          <a  href="./award.html" class="swiper-slide">奖项</a>
-          <a  href="./aboutTeam.html" class="swiper-slide active">团队</a>
-          <a  href="./service.html" class="swiper-slide ">服务</a>
-          <a  href="./join.html" class="swiper-slide ">加入</a>
-        </div>
-      </nav>
+    <div data-portamento="parent">
+      <div class="bg-white" data-portamento="child" data-top-class='.c-nav'>
+        <nav id="aboutNav">
+          <div class="swiper-wrapper">
+            <a href="./about.html" class="swiper-slide">关于</a>
+            <a href="./award.html" class="swiper-slide">奖项</a>
+            <a href="./aboutTeam.html" class="swiper-slide active">团队</a>
+            <a href="./service.html" class="swiper-slide ">服务</a>
+            <a href="./join.html" class="swiper-slide ">加入</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <!--移动 banner图 -->
     <section class="banner visible-xs-block" style="background-image: url('./images/about/aboutTeam1.jpg')"></section>
@@ -50,8 +52,11 @@
     <div class="bg-white acot pb30">
       <article class="article-container text-dark ">
         <h1 class="n article-biaoti">核心团队</h1>
-        <p class="article-p">九和包装设计公司的专业范畴涉及平面设计、产品设计、品牌及营销策略、艺术顾问等。 在王伟峰老师带领之下，一群来自跨领域且专业的团队，虽涉猎不同，但均在酒水、烟草、茶叶等创意相关行业中具有丰富的实战案例经历。</p>
-        <p class="article-p">团队的培养基本都是从大学毕业均跟随王老师，很大一部分都是超过十年的资深员工，获奖硕果累累。以传承九和包装设计公司的核心理念及质量标准，同时也因应市场与客户的需求不断创新，加入更多来自各领域的菁英。我们将客户视为合作伙伴，并将每个项目看作一项独特的挑战，共同打造创新的解决方案。</p>
+        <p class="article-p">九和包装设计公司的专业范畴涉及平面设计、产品设计、品牌及营销策略、艺术顾问等。
+          在王伟峰老师带领之下，一群来自跨领域且专业的团队，虽涉猎不同，但均在酒水、烟草、茶叶等创意相关行业中具有丰富的实战案例经历。</p>
+        <p class="article-p">
+          团队的培养基本都是从大学毕业均跟随王老师，很大一部分都是超过十年的资深员工，获奖硕果累累。以传承九和包装设计公司的核心理念及质量标准，同时也因应市场与客户的需求不断创新，加入更多来自各领域的菁英。我们将客户视为合作伙伴，并将每个项目看作一项独特的挑战，共同打造创新的解决方案。
+        </p>
         <p class="article-p"></p>
         <p class="article-p"></p>
         <figure class="full-width mobile-a-img">
@@ -60,10 +65,11 @@
         <h1 class="n article-biaoti">团队氛围</h1>
         <p class="article-p">团队氛围就是企业的土壤，影响着企业的结果，一个人状态不好就会影响一群人，带有激情去工作，才能做好工作，所以一个公司的企业文化和团队氛围是非常重要的。</p>
         <p class="article-p">
-          团队氛围是一个看不见、摸不到的东西，但可以确定的是，团队氛围是在员工之间的不断交流和互动中逐渐形成的。和谐的团队氛围能够使每个成员心情愉悦，建立安全的人际信念，可以增强团队的凝聚力。明确的团队目标和个人目标、顺畅的沟通渠道、及时的反馈通道、系统的激励机制以及具有人格魅力的管理者和通情达理的员工是建设和谐团队氛围不可缺少的因素，只有这样我们才能营造好的团队氛围，建立“家”的感觉。</p>
+          团队氛围是一个看不见、摸不到的东西，但可以确定的是，团队氛围是在员工之间的不断交流和互动中逐渐形成的。和谐的团队氛围能够使每个成员心情愉悦，建立安全的人际信念，可以增强团队的凝聚力。明确的团队目标和个人目标、顺畅的沟通渠道、及时的反馈通道、系统的激励机制以及具有人格魅力的管理者和通情达理的员工是建设和谐团队氛围不可缺少的因素，只有这样我们才能营造好的团队氛围，建立“家”的感觉。
+        </p>
       </article>
     </div>
-    
+
   </div>
   <!-- 底部 -->
   <include src="templates/footer.html"></include>

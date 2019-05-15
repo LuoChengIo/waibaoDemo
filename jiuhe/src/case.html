@@ -30,15 +30,17 @@
   <include src="templates/header.html"></include>
   <div class="auto-contanter" data-head-fiexd="true">
     <!-- 导航 -->
-    <div class="bg-white">
-      <nav id="caseNav">
-        <div class="swiper-wrapper">
-          <a href="javascript:" class="swiper-slide active">全部案例</a>
-          <a href="javascript:" class="swiper-slide">酒类</a>
-          <a href="javascript:" class="swiper-slide">烟草</a>
-          <a href="javascript:" class="swiper-slide">茶叶</a>
-        </div>
-      </nav>
+    <div data-portamento="parent">
+      <div class="bg-white" data-portamento="child" data-top-class='.c-nav'>
+        <nav id="caseNav" >
+          <div class="swiper-wrapper">
+            <a href="javascript:" class="swiper-slide active">全部案例</a>
+            <a href="javascript:" class="swiper-slide">酒类</a>
+            <a href="javascript:" class="swiper-slide">烟草</a>
+            <a href="javascript:" class="swiper-slide">茶叶</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="container-fluid case-list bg-white">
       <div class="row">
