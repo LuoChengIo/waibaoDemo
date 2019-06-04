@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>案例详情</title>
+  <!-- 页面关键词keywords -->
+  <meta name="keywords" content="your keywords">
+  <!-- 页面描述内容description -->
+  <meta name="description" content="your description">
+  <link rel="Shortcut Icon" href="./images/favicon.png" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="./js/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./js/plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" href="./css/news.css">
+</head>
+
+<body class="hp100 auto-foot-ct" data-head-class="fixed-nav">
+  <!-- 头部 -->
+  <include src="templates/header.html"></include>
+  <div class="auto-contanter text-dark bg-white" data-head-fiexd="true">
+    <div class="article-container">
+      <h1 class="news-title">
+        <span class="red-bd">九和设计「仰韶彩陶坊」荣获2008年 WorldStar世界之星 包装奖</span>
+      </h1>
+      <div class="tc click-rate hidden-xs">
+          <span class="mr10">2018-06-07</span>
+          <span class="mr10">|</span>
+          <span class="mr10">点击率：718</span>
+        <div class="f0 right-share">
+          <include src="templates/share.html"></include>
+        </div>
+      </div>
+      <!-- 富文本内容区域start -->
+      <div class="article-detail">
+        <p>仰韶酒业于9月携手九和包装上设计推出高端系列化产品“彩陶坊”，将“收藏中国之前的中国”的品牌诉求表现在产品设计上，跳出了仰韶酒传统产品汉文化围墙，更多的从品质价值和品类价值层面进行演绎，展示了全新的仰韶彩陶坊酒。
+
+            彩陶坊系列在仰韶酒业产品中精彩亮相，收获业界一致好评。</p>
+        <img src="./images/about/about2.jpg" alt="" srcset="">
+      </div>
+      <!-- 富文本内容区域end -->
+      <div class="n-foot">
+        <div class="pt15 pb15 disb-label">
+          <span class="f13">标签：</span>
+          <span class="n-label">世界之星</span>
+          <span class="n-label">世界之星</span>
+          <span class="n-label">世界之星</span>
+        </div>
+        <!-- 分享 -->
+        <div class="f0 disb-share">
+          <include src="templates/share.html"></include>
+        </div>
+      </div>
+      <!-- 上一篇下一篇 -->
+      <div class="cd-prev-next tc">
+        <a href="javascript:" target="_blank" class="prev dib vm ell">上一篇<span class="hidden-xs">：茅塔范德萨发生大</span></a>
+        <a href="javascript:" target="_blank" class="cd-center dib vm">返回列表</a>
+        <a href="javascript:" target="_blank" class="next dib vm ell">下一篇<span class="hidden-xs">：茅塔范德萨发生大</span></a>
+      </div>
+    </div>
+    <div class="height10bg"></div>
+    <!-- 可能感兴趣的文章 -->
+    <div class="news-recommend">
+        <div class="rel article-container">
+            <h2 class="news-r-hd">您可能感兴趣的文章</h2>
+            <div id="newsRecommend" class="ovh ">
+              <div class="swiper-wrapper">
+                <a href="javascript:" target="_blank" class="news-ite swiper-slide">
+                  <img class="news-img" src="./images/case/case1.jpg" alt="">
+                  <div class="n-s-details">
+                    <p class="text-info f14 mb15 hidden-xs">2019-01-23</p>
+                    <p class="red-bd ell">九思巧构 · 和而不同...</p>
+                  </div>
+                </a>
+                <a href="javascript:" target="_blank" class="news-ite swiper-slide">
+                  <img class="news-img" src="./images/case/case1.jpg" alt="">
+                  <div class="n-s-details">
+                    <p class="text-info f14 mb15 hidden-xs">2019-01-23</p>
+                    <p class="red-bd ell">九思巧构 · 和而不同...</p>
+                  </div>
+                </a>
+                <a href="javascript:" target="_blank" class="news-ite swiper-slide">
+                  <img class="news-img" src="./images/case/case1.jpg" alt="">
+                  <div class="n-s-details ">
+                    <p class="text-info f14 mb15 hidden-xs">2019-01-23</p>
+                    <p class="red-bd ell">九思巧构 · 和而不同...</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+    <div class="height10bg"></div>
+  </div>
+  <!-- 底部 -->
+  <include src="templates/footer.html"></include>
+  <!-- 客服 -->
+  <include src="templates/float.html"></include>
+  <script src="./js/lib/include.js"></script>
+  <script src="./js/lib/jquery-3.3.1.min.js"></script>
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/lib/social-share.min.js"></script>
+  <script src="./js/news.min.js"></script>
+</body>
+
+</html>

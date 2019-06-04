@@ -1,0 +1,68 @@
+<div class="contact-from">
+  <div class="caption">
+    如阁下有任何咨询或希望商讨合作机会，<br>
+    请留下您的信息，我们会尽快回复您。
+  </div>
+  <form id="contactFrom" class="c-from" method="post">
+    <div class="team">
+      <h5 class="n">请选择你希望联系的团队：</h5>
+      <p class="team-item poi" data-cname="郑州九和包装设计公司">
+        <img class="mr10 dib" src="./images/logoing.png" alt="" srcset="">
+        <img class="mr10 dn" src="./images/logo-active.png" alt="" srcset="">
+        郑州九和包装设计公司
+      </p>
+      <p class="team-item poi" data-cname="长沙九和创意工作室">
+        <img class="mr10 dib" src="./images/logoing.png" alt="" srcset="">
+        <img class="mr10 dn" src="./images/logo-active.png" alt="" srcset="">
+        长沙九和创意工作室
+      </p>
+    </div>
+    <div class="f-input">
+      <h5 class="n mb15">*必须填写</h5>
+      <div class="from-item">
+        <label for="userName">你的姓名*</label>
+        <input id="userName" name="userName" type="text">
+        <div class="sdst"></div>
+      </div>
+      <div class="from-item">
+        <label for="userCompanyName">品牌/公司</label>
+        <input id="userCompanyName" name="userCompanyName" maxlength="50" type="text">
+        <div class="sdst"></div>
+      </div>
+      <div class="from-item">
+        <label for="userEmail">电子邮件*</label>
+        <input id="userEmail" name="userEmail" maxlength="50" type="text">
+        <div class="sdst"></div>
+      </div>
+      <div class="from-item">
+        <label for="userPhone">联系电话*</label>
+        <input id="userPhone" name="userPhone" maxlength="11" type="tel">
+        <div class="sdst"></div>
+      </div>
+      <div class="from-item no-center">
+        <label for="demand">需求/留言</label>
+        <textarea id="demand" name="demand"  cols="30" rows="10"></textarea>
+        <div class="sdst"></div>
+      </div>
+      <input type="hidden" name="companyName">
+      <button class="submit disabled" type="button">提交</button>
+    </div>
+  </form>
+  <div class="modal myModal fade" tabindex="-1" role="dialog" id="contactFromDialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">提示信息</h4>
+        </div>
+        <div class="tc contact-modal">
+          <h1 class="f24 n">
+            <img class="vm" src="./images/dialog-wa.png" alt="">
+            <span class="vm">发送成功！</span>
+          </h1>
+          <p class="f14 text-info mt15">请保持电话畅通，我们的客服人员将尽快与您联系。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
