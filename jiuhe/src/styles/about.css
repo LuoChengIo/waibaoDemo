@@ -490,3 +490,41 @@ h3.article-p{
 }
 /*=====  End of 服务  ======*/
 
+
+/*=============================================
+=            404页面            =
+=============================================*/
+.bg-f2{
+  background-color: #f2f2f2
+}
+.tos-ct{
+  width: 100%;
+  padding: 8% 50px;
+  padding-top: 8%;
+  max-width: 708px;
+  margin: 0 auto;
+  h1{
+    font-size: 18px;
+    @media (min-width: 768px){
+      font-size: 26px;
+    }
+  }
+  .bts-t{
+    width: 100%;
+    padding:15px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .back-home{
+    display: inline-block;
+    background-color: #d3bf96;
+    line-height: 30px;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 90px;
+  }
+}
+
+/*=====  End of 404页面  ======*/
+
