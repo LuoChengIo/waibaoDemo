@@ -69,10 +69,20 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1px 15px;
+  @media (min-width: 768px) {
+    padding: 1px 0;
+  }
+}
+.full-article-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px 15px;
   p{
     img{
       display: block;
-      width: 100vw;
+      width: 100vw !important;
+      height: auto;
       position: relative;
       left: 50%;
       right: 50%;
